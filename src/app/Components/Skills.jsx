@@ -3,7 +3,7 @@ import React from "react";
 const Skils = () => {
   const Components = ({ Title, Percentage }) => {
     return (
-      <div className="my-4">
+      <div className="my-4" key={Title}>
         <div className="flex justify-between mb-1">
           <span className="text-base font-medium text-blue-700 dark:text-white">
             {Title}
@@ -48,8 +48,8 @@ const Skils = () => {
       <h2 className="text-2xl font-extrabold dark:text-white mt-4">Skills</h2>
       <hr className="my-3"></hr>
       <div>
-        {SkillSet.map((item) => {
-          return <Components {...item}></Components>;
+        {SkillSet.map((item, key) => {
+          return <Components key={key} {...item}></Components>;
         })}
       </div>
     </>

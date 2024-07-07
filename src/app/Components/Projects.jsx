@@ -55,9 +55,12 @@ const Projects = () => {
         </div>
         <div className="my-4">
           <ul class="space-y-4 text-left text-gray-500 dark:text-gray-400">
-            {Features.map((item) => {
+            {Features.map((item, key) => {
               return (
-                <li class="flex items-center space-x-3 rtl:space-x-reverse">
+                <li
+                  key={key}
+                  class="flex items-center space-x-3 rtl:space-x-reverse"
+                >
                   <svg
                     class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
                     aria-hidden="true"
