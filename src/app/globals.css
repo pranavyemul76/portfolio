@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -25,7 +27,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.7s ease-out;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
