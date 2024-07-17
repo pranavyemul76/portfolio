@@ -9,7 +9,7 @@ const About = () => {
       <div>
         <h2 className="text-4xl font-extrabold dark:text-white">About Me</h2>
         <p className="my-4 text-lg text-gray-500">
-          I have 1 year 6 months of experience in MERN stack technology,
+          I have 2 year  of experience in Full stack web development,
           specializing in developing dynamic web applications. My expertise lies
           in optimizing performance and efficiency across the stack. I focus on
           enhancing user experience and reducing load times. This includes
